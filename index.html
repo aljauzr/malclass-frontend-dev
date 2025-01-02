@@ -163,7 +163,7 @@
           const img = document.getElementById('outputImage');
           img.style.display = 'none';
 
-          const response = await fetch('http://35.225.127.2/upload', {
+          const response = await fetch(backend_url + '/upload', {
               method: 'POST',
               body: formData
           });
